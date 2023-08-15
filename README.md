@@ -1,8 +1,8 @@
 ## Dependencies
 
-Numpy\\
-Numba\\
-Python 3\\
+Numpy,
+Numba,
+Python 3
 
 The code was tested with the versions `numpy==1.19.2` and `numba==0.54.0`.
 
