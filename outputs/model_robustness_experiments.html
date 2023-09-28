@@ -14583,6 +14583,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">numba</span> <span class="kn">import</span> <span class="n">jit</span><span class="p">,</span><span class="n">njit</span><span class="p">,</span><span class="n">prange</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">path_to_folder</span> <span class="o">=</span> <span class="s2">"XXX"</span> <span class="c1"># IMPORTANT change this to your path folder</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">path_to_folder</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14834,7 +14837,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="c1">#no purchase attractiveness for customers (not varied)</span>
 <span class="n">no_purchase</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="c1">#discount functions</span>
-<span class="n">discounts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">"discount_functions_updated.npy"</span><span class="p">)[</span><span class="mi">0</span><span class="p">,:]</span>
+<span class="n">discounts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">"../outputs/discount_functions_updated.npy"</span><span class="p">)[</span><span class="mi">0</span><span class="p">,:]</span>
 <span class="c1">#results array</span>
 <span class="n">results</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">g_rate_list</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">T_list</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">k_list</span><span class="p">),</span><span class="mi">4</span><span class="p">))</span>
 
